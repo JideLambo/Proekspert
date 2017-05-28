@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+@import 'components/variables';
+@import 'components/navigation';
+@import 'components/typography';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.hero {
+    background-color: #87C87E;
+    position: fixed;
+    top: 90px;
+    z-index: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: left;
+    
+    .home-slider {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        height: 100%;
+    }
+    
+    .hero-block {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        
+        &:before {
+             content: '';
+             background-image: url(/dist/img/bg-icons.png);
+             position: absolute;
+             top: 0;
+             left: 0;
+             height: 100%;
+             width: 100%;
+             opacity: .05;
+           }
+        
+        li.animated {
+            list-style: none;
+            width: 100%;
+            justify-content: space-around;
+            
+            &.graphic {
+                background-color: #78C96C;
+                padding:20px 40px 20px 0;
+                -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+                clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+                -webkit-animation-delay: .5s;
+                animation-delay: .5s;
+            }
+            
+            &.text {
+                -webkit-animation-delay: .75s;
+                animation-delay: .75s;
+                
+                
+                .row {
+                    margin-top: 110px;
+                    .text-col {
+                       
+                    }
+                    h1 {
+                        color: #fff;
+                        font-size: 36px;
+                        font-weight: 100;
+                        margin-bottom: 20px;
+                    }
+                    .btn-inquiry {
+                        border: 3px solid #fff;
+                        background-color: $green2;
+                        color: #fff;
+                    }
+                    
+                }
+            }
+            
+            &.image {
+                width: 25%;
+                -webkit-animation-delay: 1s;
+                animation-delay: 1s;
+                
+                img {
+                    -webkit-clip-path: polygon(15% 0%, 80% 0%, 65% 100%, 0% 100%);
+                    clip-path: polygon(15% 0%, 80% 0%, 65% 100%, 0% 100%);
+                }
+            }
+        }
+    }
+}
+
+.content {
+    display: block;
+    position: relative;
+    margin-top: calc(100vh + 60px);
+    background-color: #ffffff;
+    
+    .content-1 {
+        position: relative;
+        z-index: 2;
+        padding: 100px 0;
+        
+        .content-header {
+            text-align: center;
+            
+            .sub-header {
+                width: 80%;
+                margin-right: auto;
+                margin-left: auto;
+                position: relative;
+                padding-bottom: 50px;
+                
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -100px;
+                    height: 4px;
+                    border-left: 100px solid $green-deep;
+                    border-right: 100px solid $accent-color;
+                }
+            }
+        }
+        
+        .about-us {
+            padding-top: 70px;
+            
+            .col-about {
+                text-align: center;
+                
+                h3.d-title {
+                    font-size: 28px;
+                    font-weight: 100;
+                    color: $text1;
+                }
+                p.d-info {
+                    font-size: 16px;
+                    color: $accent-color;
+                }
+                
+                .icon {
+                    width: 56px;
+                    height: 56px;
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                    min-height: 81px;
+                    overflow: hidden;
+                    background-repeat: no-repeat;
+                    
+                    &.icon-dev {
+                        background-image: url(../../dist/img/icons/robot.png);
+                        height: 81px;
+                    }
+                    &.icon-design {
+                        background-image: url(../../dist/img/icons/vector.png);
+                    }
+                    &.icon-data {
+                        background-image: url(../../dist/img/icons/layers.png);
+                    }
+                    &.icon-drive {
+                        background-image: url(../../dist/img/icons/binary-code.png);
+                    }
+                }
+            }
+        }
+    }
+}
