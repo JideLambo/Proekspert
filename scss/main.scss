@@ -3,6 +3,7 @@
 @import 'components/variables';
 @import 'components/navigation';
 @import 'components/typography';
+@import 'components/button';
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -73,11 +74,6 @@ body {
                         font-weight: 100;
                         margin-bottom: 20px;
                     }
-                    .btn-inquiry {
-                        border: 3px solid #fff;
-                        background-color: $green2;
-                        color: #fff;
-                    }
                     
                 }
             }
@@ -101,6 +97,7 @@ body {
     position: relative;
     margin-top: calc(100vh + 60px);
     background-color: #ffffff;
+    box-shadow:  0 -3px 1px 0 rgba(0,0,0,.15);
     
     .content-1 {
         position: relative;
@@ -132,6 +129,7 @@ body {
         
         .about-us {
             padding-top: 70px;
+            padding-bottom: 70px;
             
             .col-about {
                 text-align: center;
@@ -171,6 +169,23 @@ body {
                     }
                 }
             }
+        }
+    }
+}
+
+.more-btn {
+    
+    .more-btn-ul {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        
+        li {
+            list-style: none;
+            display: inline-block;
+            padding-right: 25px;
         }
     }
 }
