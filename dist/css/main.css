@@ -76,10 +76,6 @@ header {
       list-style: none;
       justify-content: center;
       margin-top: 15px; }
-      .navbar .main-navbar ul.pull-right li.btn-list a.btn {
-        color: #ffffff;
-        font-size: 13px;
-        background-color: #00BEC1; }
 
 .big-text {
   font-size: 36px;
@@ -100,11 +96,40 @@ header {
   border: 3px solid #fff;
   background-color: #87C87E;
   color: #fff; }
+  .btn-inquiry:hover {
+    background-color: #78C96C;
+    border: 2px solid #78C96C;
+    color: #ffffff;
+    padding-left: 5px; }
+    .btn-inquiry:hover span {
+      -webkit-transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+      transform: translateX(-10px); }
 
 .btn-more {
   border: 3px solid #00BEC1;
   background-color: #fff;
   color: #00BEC1; }
+  .btn-more:hover {
+    background-color: #00BEC1;
+    color: #ffffff;
+    border: 3px solid #00BEC1;
+    padding-left: 5px;
+    transition: all .25s ease; }
+
+.btn-custom {
+  color: #ffffff;
+  font-size: 13px;
+  background-color: #00BEC1; }
+  .btn-custom:hover {
+    background-color: #fff;
+    color: #00BEC1;
+    border: 1px solid #00BEC1; }
+
+.btn {
+  transition: all .25s ease-in-out;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -305,6 +330,12 @@ a, p, a:hover {
         left: 40%;
         background-image: url(../../dist/img/case-img/indicator.png);
         background-repeat: no-repeat; }
+        .content .content-2 .case-rows .case-link .case-indicator:hover {
+          cursor: pointer;
+          transition: all .5s ease;
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg); }
 
 .more-btn .more-btn-ul {
   text-align: center;

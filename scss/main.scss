@@ -4,6 +4,7 @@
 @import 'components/navigation';
 @import 'components/typography';
 @import 'components/button';
+@import 'components/animation';
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -281,6 +282,14 @@ a, p, a:hover {
                     left: 40%;
                     background-image: url(../../dist/img/case-img/indicator.png);
                     background-repeat: no-repeat;
+                    
+                    &:hover {
+                        cursor: pointer;
+                        transition: all .5s ease;
+                        -webkit-transform: rotate(360deg);
+                        -ms-transform: rotate(360deg);
+                        transform: rotate(360deg);
+                    }
                 }
             }
         }
