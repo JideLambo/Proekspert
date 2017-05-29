@@ -39,7 +39,7 @@ a, p, a:hover {
         
         &:before {
              content: '';
-             background-image: url(/dist/img/bg-icons.png);
+             background-image: url(../../dist/img/bg-icons.png);
              position: absolute;
              top: 0;
              left: 0;
@@ -279,7 +279,7 @@ a, p, a:hover {
                     height: 67px;
                     top: 35%;
                     left: 40%;
-                    background-image: url(/dist/img/case-img/indicator.png);
+                    background-image: url(../../dist/img/case-img/indicator.png);
                     background-repeat: no-repeat;
                 }
             }
