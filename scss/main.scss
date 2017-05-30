@@ -294,6 +294,22 @@ a, p, a:hover {
             }
         }
     }
+    
+    .content-3 {
+        position: relative;
+        z-index: 2;
+        padding: 100px 0;
+        border-bottom: 1px solid $primary-color;
+        
+        .content-header {
+            text-align: center; 
+            
+            .big-header {
+                position: relative;
+                padding-bottom: 30px; 
+            }
+        }
+    }
 }
 
 .more-btn {

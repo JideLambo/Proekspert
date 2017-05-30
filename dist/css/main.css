@@ -336,6 +336,16 @@ a, p, a:hover {
           -webkit-transform: rotate(360deg);
           -ms-transform: rotate(360deg);
           transform: rotate(360deg); }
+  .content .content-3 {
+    position: relative;
+    z-index: 2;
+    padding: 100px 0;
+    border-bottom: 1px solid #00BEC1; }
+    .content .content-3 .content-header {
+      text-align: center; }
+      .content .content-3 .content-header .big-header {
+        position: relative;
+        padding-bottom: 30px; }
 
 .more-btn .more-btn-ul {
   text-align: center;
