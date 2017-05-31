@@ -90,10 +90,10 @@ header {
 .btn {
   font-size: 16px;
   font-weight: bold;
-  border-radius: 8px; }
+  border-radius: 6px; }
 
 .btn-inquiry {
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   background-color: #87C87E;
   color: #fff; }
   .btn-inquiry:hover {
@@ -107,13 +107,13 @@ header {
       transform: translateX(-10px); }
 
 .btn-more {
-  border: 3px solid #00BEC1;
+  border: 2px solid #00BEC1;
   background-color: #fff;
   color: #00BEC1; }
   .btn-more:hover {
     background-color: #00BEC1;
     color: #ffffff;
-    border: 3px solid #00BEC1;
+    border: 2px solid #00BEC1;
     padding-left: 5px;
     transition: all .25s ease; }
 
@@ -357,3 +357,58 @@ a, p, a:hover {
     list-style: none;
     display: inline-block;
     padding-right: 25px; }
+
+.content-3 {
+  background-color: #F9F9F9; }
+
+.article-rows {
+  margin-top: 60px; }
+  .article-rows .col-3 {
+    position: relative;
+    padding: 30px 20px;
+    height: 100%;
+    width: 100%;
+    min-height: 360px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 1px 0 rgba(0, 0, 0, 0.095);
+    display: flex; }
+    .article-rows .col-3:before {
+      content: "";
+      transition: .4s all ease;
+      display: block;
+      width: 100%;
+      height: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #00BEC1; }
+    .article-rows .col-3 a {
+      position: relative; }
+      .article-rows .col-3 a .icon {
+        width: 56px;
+        height: 56px;
+        display: block;
+        min-height: 81px;
+        overflow: hidden;
+        background-repeat: no-repeat; }
+        .article-rows .col-3 a .icon.icon-dev {
+          background-image: url(../../dist/img/icons/robot.png);
+          height: 81px; }
+        .article-rows .col-3 a .icon.icon-design {
+          background-image: url(../../dist/img/icons/vector.png); }
+        .article-rows .col-3 a .icon.icon-data {
+          background-image: url(../../dist/img/icons/layers.png); }
+        .article-rows .col-3 a .icon.icon-drive {
+          background-image: url(../../dist/img/icons/binary-code.png); }
+      .article-rows .col-3 a p {
+        font-size: 21px;
+        font-weight: 100;
+        color: #85878C;
+        padding-top: 10px; }
+      .article-rows .col-3 a span {
+        position: absolute;
+        bottom: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #00BEC1; }
