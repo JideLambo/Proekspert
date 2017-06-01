@@ -372,7 +372,9 @@ a, p, a:hover {
     overflow: hidden;
     background-color: #ffffff;
     box-shadow: 4px 4px 1px 0 rgba(0, 0, 0, 0.095);
-    display: flex; }
+    transition: top .25s ease;
+    display: flex;
+    cursor: pointer; }
     .article-rows .col-3:before {
       content: "";
       transition: .4s all ease;
@@ -383,6 +385,10 @@ a, p, a:hover {
       top: 0;
       left: 0;
       background-color: #00BEC1; }
+    .article-rows .col-3:hover {
+      transition: all .25s ease;
+      top: -10px;
+      box-shadow: 7px 7px 7px 0 rgba(0, 0, 0, 0.15); }
     .article-rows .col-3 a {
       position: relative; }
       .article-rows .col-3 a .icon {
